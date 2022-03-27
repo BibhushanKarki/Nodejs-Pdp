@@ -40,7 +40,7 @@ geocode('Biratnagar',(error,data)=>{
 
 // Forecast
 
-forecast('-75.70a88',44.1545,(error,data)=>{
+forecast(-75.7088,44.1545,(error,data)=>{
   console.log('Error',error);
   console.log('Data',data);
 })
