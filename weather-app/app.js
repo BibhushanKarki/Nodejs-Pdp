@@ -1,4 +1,5 @@
 const request = require('request');
+const geocode =require('./utils/geocode');
 
 const url = 'http://api.weatherstack.com/current?access_key=b75f87f480ce164e2f4e3ddd3fac72af&query=26.452475,87.271782&units=f';
 
@@ -30,3 +31,8 @@ request({url:geoCodeUrl,json:true}, (error,response) => {
   console.log(latitude,longitute);
   }
 });
+
+geocode('Biratnagar',(error,data)=>{
+  console.log('Error',error);
+  console.log('Data',data);
+})
